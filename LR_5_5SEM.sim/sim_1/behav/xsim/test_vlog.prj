@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  -d "maxdeltaid=50000" \
+"../../../../LR_5_5SEM.srcs/sources_1/new/clk_wiz_0.v" \
+"../../../../LR_5_5SEM.srcs/sources_1/new/cpu_conv3_mips.v" \
+"../../../../LR_5_5SEM.srcs/sources_1/new/main.v" \
+"../../../../LR_5_5SEM.srcs/sim_1/new/test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
